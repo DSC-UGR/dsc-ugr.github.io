@@ -3,16 +3,37 @@
   padding: 0;
   border: 0;
   outline: 0;
+  font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
+  box-sizing: border-box;
 }
 
 body {
   color: white;
   width: 100vw;
   height: 100vh;
-  background: rgb(242, 67, 209);
+  background: rgb(204, 190, 46);
   background: linear-gradient(
     153deg,
-    rgba(242, 67, 209, 1) 0%,
-    rgba(0, 30, 255, 1) 100%
+    rgba(204, 190, 46, 1) 0%,
+    rgba(0, 135, 67, 1) 100%
   );
+}
+
+header {
+  color: rgba(255, 255, 255, 0.8);
+  flex-wrap: wrap;
+  display: flex;
+  font-size: 3em;
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-top: 0.5em;
+  width: 100%;
+  align-items: center;
+}
+
+header img {
+  max-width: 100px;
+  max-height: 100px;
+  margin-right: 10px;
 }

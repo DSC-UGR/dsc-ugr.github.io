@@ -9,6 +9,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+    <script src="main.js" defer></script>
   </head>
   <body>
     <header>
@@ -113,13 +114,14 @@
         action="https://send.pageclip.co/5ND4SPBvq44sUgPOMF82SoR0KPtEJWph"
         class="pageclip-form"
         method="post"
+        id="core-team-form"
       >
         <h1>¿Quieres formar parte del core team?</h1>
         <input type="text" name="name" placeholder="Nombre" />
         <input type="email" name="email" placeholder="Email" />
 
-        <button type="submit" class="pageclip-form__submit">
-          <span>Send</span>
+        <button type="submit" class="pageclip-form__submit" id="button">
+          <span>Enviar</span>
         </button>
       </form>
     </section>

@@ -33,7 +33,9 @@ header {
 }
 
 section {
-  padding: 3em;
+  padding-left: 3em;
+  padding-right: 3em;
+  padding-top: 3em;
   height: 100%;
   width: 100%;
 }
@@ -50,10 +52,15 @@ section ul {
 section h1 {
   font-weight: 100;
   font-size: 3em;
+  margin-bottom: 20px;
 }
 
 header img {
   max-width: 100px;
   max-height: 100px;
   margin-right: 10px;
+}
+
+footer {
+  margin: 1em;
 }

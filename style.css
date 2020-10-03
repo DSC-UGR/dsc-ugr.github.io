@@ -12,13 +12,17 @@ a:visited {
   color: white;
 }
 
+a {
+  color: white;
+}
+
 body {
   color: white;
   width: 100vw;
   min-height: 100vh;
   background: rgb(204, 190, 46);
   background: linear-gradient(
-    153deg,
+    333deg,
     rgba(204, 190, 46, 1) 0%,
     rgba(0, 135, 67, 1) 100%
   );

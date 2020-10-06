@@ -231,7 +231,7 @@ section {
 }
 
 .pb-5 {
-  padding: 32px;
+  padding-bottom: 32px;
 }
 
 .date-title {
@@ -295,7 +295,7 @@ header img {
 }
 
 .col-6 {
-  width: 20%;
+  width: 22%;
 }
 
 .col-4 {
@@ -319,7 +319,7 @@ header img {
   }
 
   .col-6 {
-    width: 40%;
+    width: 45%;
   }
 
   .col-4 {
@@ -336,6 +336,14 @@ header img {
 
   .card-text {
     font-size: .8em;
+  }
+
+  header h1 {
+    margin-top: 10px;
+  }
+
+  #university {
+    margin-top: 23px;
   }
 }
 

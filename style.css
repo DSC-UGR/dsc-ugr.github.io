@@ -8,65 +8,345 @@
   box-sizing: border-box;
 }
 
-a:visited {
-  color: white;
+html {
+  scroll-behavior: smooth;
 }
 
-a {
+.masonry {
+  /* Masonry container */
+  margin: 0 24px;
+  column-count: 3;
+  column-gap: 1em;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+.pa-5 {
+  padding: 64px;
+}
+
+.ma-5 {
+  margin: 48px;
+}
+
+.my-5 {
+  margin: 64px 0;
+}
+
+.py-5 {
+  padding: 64px 0;
+}
+
+.item {
+  /* Masonry bricks or child elements */
+  background-color: #eee;
+  display: inline-block;
+  margin: 0 0 1em;
+  width: 100%;
+}
+
+#button {
+  cursor: pointer;
+}
+
+#cta {
   color: white;
+  width: 320px;
+  border-radius: 48px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  font-size: 1.2em;
+  cursor: pointer;
+  margin: 24px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.15s ease-in-out;
+}
+
+.anchor {
+  color: black;
+  font-weight: 800;
+  letter-spacing: 1px;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+#cta:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+    0 10px 10px rgba(0, 0, 0, 0.22);
+  background-color: #4180ecE0;
+}
+
+/* Transition to showing the bigger shadow on hover */
+#cta:hover::after {
+  opacity: 1;
+}
+
+#sendButton {
+  cursor: pointer;
+}
+
+.carrousel-item {
+  margin: 12px;
+  width: 20%;
+}
+
+.twitter {
+  height: 26px;
+}
+
+.twitter-color {
+  background-color: #1da2f2;
+  color: white;
+  justify-self: end;
+}
+
+.card-image {
+  height: 120px;
+  margin: 32px;
+}
+
+.button {
+  padding: 3px 8px;
+  display: flex;
+  align-items: center;
+  font-size: .8em;
+  border-radius: 24px;
+  text-decoration: none;
+  font-family: 'Roboto';
 }
 
 body {
-  color: white;
+  color: black;
   width: 100vw;
   min-height: 100vh;
-  background: rgb(204, 190, 46);
-  background: linear-gradient(
-    333deg,
-    rgba(204, 190, 46, 1) 0%,
-    rgba(0, 135, 67, 1) 100%
-  );
+
 }
 
 header {
-  flex-wrap: wrap;
+  position: fixed;
+  background-color: white;
+  top: 0;
+  left: 0;
+  right: 0;
+  flex-wrap: nowrap;
   display: flex;
-  font-size: 3em;
   padding-left: 1em;
   padding-right: 1em;
   padding-top: 0.5em;
   width: 100%;
   align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16),
+    0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+
+header div h1 {
+  font-weight: 100;
+  font-size: 1.6em;
 }
 
 section {
-  padding-left: 3em;
-  padding-right: 3em;
-  padding-top: 3em;
   height: 100%;
   width: 100%;
+}
+
+.card {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.carrousel::-webkit-scrollbar {
+  display: none;
+}
+
+.carrousel {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  margin: 32px;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+
+}
+
+.outline {
+  border: 2px solid #0c9955;
+  border-radius: 12px;
+}
+
+.blue {
+  color: white;
+  background-color: #4180ec;
+}
+
+.red {
+  background-color: #e34134;
+}
+
+.yellow {
+  background-color: #f2b606;
+}
+
+.warning {
+  background-color: #f2b60660;
+}
+
+.green {
+  background-color: #0c9955;
+}
+
+.text-white {
+  color: white;
+}
+
+.text-red {
+  color: #e34134;
+}
+
+.pa-3 {
+  padding: 16px;
+}
+
+.ma-1 {
+  margin: 8px;
+}
+
+.ma-3 {
+  margin: 16px;
+}
+
+.mb-3 {
+  margin-bottom: 16px;
+}
+
+.mb-4 {
+  margin-bottom: 24px;
+}
+
+.pa-4 {
+  padding: 24px;
+}
+
+.pb-5 {
+  padding-bottom: 32px;
+}
+
+.date-title {
+  font-weight: 100;
+  font-size: 2em;
+  margin-bottom: 8px;
+}
+
+.field {
+  min-width: 250px;
+  width: 100%;
+}
+
+#university {
+  height: fit-content;
+  font-size: 12px;
+  margin-top: 27px;
+  margin-left: 4px;
+}
+
+#header-rotate {
+  min-height: 120px;
+  padding-top: 86px;
+  margin: 12px;
+  margin-top: 72px;
+}
+
+#header-rotate h1 {
+  font-size: 2.5em;
 }
 
 section p {
   line-height: 2em;
   font-weight: 300;
 }
+
 section ul {
   line-height: 2em;
   font-weight: 300;
 }
 
-section h1 {
+section h2 {
   font-weight: 100;
-  font-size: 3em;
+  font-size: 2.5em;
   margin-bottom: 20px;
 }
 
+header h1 {
+  height: fit-content;
+  margin-top: 15px;
+}
+
 header img {
-  max-width: 100px;
-  max-height: 100px;
+  max-width: 60px;
+  max-height: 60px;
   margin-right: 10px;
 }
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+.col-6 {
+  width: 22%;
+}
+
+.col-4 {
+  width: 30%;
+}
+
+@media(max-width: 640px) {
+  header img {
+    max-width: 50px;
+    max-height: 50px;
+  }
+
+  .carrousel-item {
+    margin: 12px;
+    width: 80%;
+    flex: 0 0 auto;
+  }
+
+  .carrousel {
+    margin: 0;
+  }
+
+  .col-6 {
+    width: 45%;
+  }
+
+  .col-4 {
+    width: 100%;
+  }
+
+  .pa-3 {
+    padding: 8px;
+  }
+
+  .ma-5 {
+    margin: 12px;
+  }
+
+  .card-text {
+    font-size: .8em;
+  }
+
+  header h1 {
+    margin-top: 10px;
+  }
+
+  #university {
+    margin-top: 23px;
+  }
+}
+
 
 form {
   margin-top: 4em;
@@ -84,8 +364,9 @@ input {
   display: block;
   margin-bottom: 2em;
 }
+
 button {
-  padding: 1em;
+  padding: 4px;
   width: 100px;
   border-radius: 0.3em;
 }

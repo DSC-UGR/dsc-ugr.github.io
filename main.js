@@ -22,6 +22,7 @@ const form = document.querySelector("#core-team-form");
 const onSubmit = () => {
   formButton.textContent = "¡Gracias!";
   formButton.setAttribute("disabled", "true");
+  alert("Se ha enviado la solicitud correctamente, te contactaremos por email dentro de poco!")
 };
 
 
@@ -89,8 +90,8 @@ window.onload = function () {
 
 let sendButton = document.getElementById('button')
 sendButton.addEventListener('click', async () => {
-  //   name = document.getElementById("name").value
-  //   email = document.getElementById("email").value
+  //   let name = document.getElementById("name").value
+  //   let email = document.getElementById("email").value
   //   const rawResponse = await fetch('https://send.pageclip.co/5ND4SPBvq44sUgPOMF82SoR0KPtEJWph', {
   //     method: 'POST',
   //     headers: {

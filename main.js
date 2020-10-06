@@ -12,7 +12,8 @@ if (window.matchMedia('(min-width: 640px)').matches) {
 
 const cta = document.getElementById("cta")
 cta.addEventListener("click", (ev) => {
-  window.scrollTo(0, document.body.scrollHeight);
+  var elmnt = document.getElementById("scrollHere");
+  elmnt.scrollIntoView();
 })
 
 const formButton = document.querySelector("#button");
@@ -21,6 +22,7 @@ const form = document.querySelector("#core-team-form");
 const onSubmit = () => {
   formButton.textContent = "¡Gracias!";
   formButton.setAttribute("disabled", "true");
+  alert("Se ha enviado la solicitud correctamente, te contactaremos por email dentro de poco!")
 };
 
 
@@ -83,3 +85,25 @@ window.onload = function () {
   css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
   document.body.appendChild(css);
 };
+
+// Send data
+
+let sendButton = document.getElementById('button')
+sendButton.addEventListener('click', async () => {
+  //   let name = document.getElementById("name").value
+  //   let email = document.getElementById("email").value
+  //   const rawResponse = await fetch('https://send.pageclip.co/5ND4SPBvq44sUgPOMF82SoR0KPtEJWph', {
+  //     method: 'POST',
+  //     headers: {
+  //       'Accept': 'application/json',
+  //       'Content-Type': 'application/json'
+  //     },
+  //     body: JSON.stringify({
+  //       name: 'andres',
+  //       email: 'test@email.com'
+  //     })
+  //   });
+  //   const content = await rawResponse.json();
+
+  // console.log(content);
+})

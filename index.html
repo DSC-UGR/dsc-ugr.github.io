@@ -20,7 +20,7 @@
         <h2 id="university">UGR</h2>
       </div>
       <a
-        href="https://twitter.com/dsc_granada?ref_src=twsrc%5Etfw"
+        href="https://twitter.com/intent/user?screen_name=dsc_granada"
         id="follow"
         target="_blank"
         class="twitter-color button"
@@ -227,6 +227,7 @@
           organizar.</b
         >
       </p>
+      <div id="scrollHere"></div>
     </section>
     <section style="padding-bottom: 32px">
       <div class="card blue ma-5">
@@ -239,10 +240,22 @@
           <h2 style="color: white">¿Quieres <b>formar parte</b> del DSC?</h2>
           <span style="margin: 0 8px 16px 16px"
             >Pon tu <b>nombre</b> y tu <b>email</b> y
-            <b>contactaremos contigo</b> en menos de 24 horas.</span
+            <b>contactaremos contigo</b> pronto!</span
           >
-          <input class="field" type="text" name="name" placeholder="Nombre" />
-          <input class="field" type="email" name="email" placeholder="Email" />
+          <input
+            id="name"
+            class="field"
+            type="text"
+            name="name"
+            placeholder="Nombre"
+          />
+          <input
+            id="email"
+            class="field"
+            type="email"
+            name="email"
+            placeholder="Email"
+          />
 
           <button type="submit" class="pageclip-form__submit" id="button">
             <span id="sendButton">Enviar</span>
@@ -250,13 +263,28 @@
         </form>
       </div>
     </section>
+    <section>
+      <a
+        class="twitter-timeline"
+        style="width: 100%"
+        noscrollbar
+        href="https://twitter.com/DSC_Granada?ref_src=twsrc%5Etfw"
+        >Tweets by DSC_Granada</a
+      >
+      <script
+        async
+        src="https://platform.twitter.com/widgets.js"
+        charset="utf-8"
+      ></script>
+    </section>
 
     <footer class="center">
       <a
-        href="https://twitter.com/dsc_granada?ref_src=twsrc%5Etfw"
+        href="https://twitter.com/intent/user?screen_name=dsc_granada"
         target="_blank"
         ><i>@dsc_granada</i></a
       >
     </footer>
+    <script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
   </body>
 </html>

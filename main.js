@@ -16,11 +16,13 @@ cta.addEventListener("click", (ev) => {
 })
 
 const formButton = document.querySelector("#button");
+const form = document.querySelector("#core-team-form");
 
-formButton.onclick = (e) => {
+const onSubmit = () => {
   formButton.textContent = "¡Gracias!";
   formButton.setAttribute("disabled", "true");
 };
+
 
 // Animacion del header
 var TxtRotate = function (el, toRotate, period) {

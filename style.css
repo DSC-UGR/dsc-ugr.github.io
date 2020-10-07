@@ -12,6 +12,7 @@ html {
   scroll-behavior: smooth;
 }
 
+
 .masonry {
   /* Masonry container */
   margin: 0 24px;
@@ -180,29 +181,29 @@ section {
 }
 
 .outline {
-  border: 2px solid #0c9955;
+  border: 3px solid #34a853;
   border-radius: 12px;
 }
 
 .blue {
   color: white;
-  background-color: #4180ec;
+  background-color: #4285f4;
 }
 
 .red {
-  background-color: #e34134;
+  background-color: #ea4335;
 }
 
 .yellow {
-  background-color: #f2b606;
+  background-color: #fbbc05;
 }
 
 .warning {
-  background-color: #f2b60660;
+  background-color: #FEEFC3;
 }
 
 .green {
-  background-color: #0c9955;
+  background-color: #34a853;
 }
 
 .text-white {
